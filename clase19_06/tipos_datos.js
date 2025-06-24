@@ -28,11 +28,11 @@ numero.push(10);
 
 // NO SE SABE CUANTAS POSICIONES TIENE EL ARREGLO
 
-const numeros = [10,20,30,40,50,60,70,80,90,100];
+// const numeros = [10,20,30,40,50,60,70,80,90,100];
 
-// for (i=0;i<numeros.length; i++){
+// // for (i=0;i<numeros.length; i++){
 
-    // console.log(numeros[i])
+//     // console.log(numeros[i])
 
 
 // OPTIMIZAR EL FOR SIN TENER UN INDEX (i=0)
@@ -43,15 +43,38 @@ const numeros = [10,20,30,40,50,60,70,80,90,100];
 
  
 
-//  OTRA FORMA DE RECORRE EL ARREGLO MAS OPTIMIZADO
+// //  OTRA FORMA DE RECORRE EL ARREGLO MAS OPTIMIZADO
 
-// numeros.map((item)=>console.log(item));
-// numeros.forEach(item=>console.log(item));
 
-let i = 0;
 
-while (i<numeros.length){
+// /* OBJETOS EN JAVASCRIPT */
 
-    console.log(numeros[i]);
-    i++; 
-}
+// const persona = {
+    
+//     nombre:"Josee",
+//     apellido:"Romero",
+//     edad:40,
+    // numeros.map((item)=>console.log(item)); devuelve un resultado
+// 
+// };
+// clclg  clconsole.log.edad(persona);numeros.forEach(item=>console.log(item)); no devuelve resultado
+
+// let i = 0;
+
+// while (i<numeros.length){
+
+//     console.log(numeros[i]);
+//     i++; 
+// }
+
+
+/* OBJETOS EN JAVASCRIPT */
+
+const persona = {
+
+    nombre:"Josee",
+    apellido:"Romero",
+    edad:40,
+    };
+    console.log(persona.edad);
+
