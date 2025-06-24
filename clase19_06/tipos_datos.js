@@ -72,9 +72,9 @@ numero.push(10);
 
 const persona = {
 
-    nombre:"Josee",
+    nombre:"Jose",
     apellido:"Romero",
     edad:40,
     };
-    console.log(persona.edad);
+    console.log(persona.nombre);
 
