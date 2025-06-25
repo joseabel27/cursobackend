@@ -191,4 +191,5 @@ const data = [
 
 ];
 
-console.log(data[0].monto);
+console.log(data[1].cuentaAhorros);
+
