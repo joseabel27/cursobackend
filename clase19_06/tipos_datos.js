@@ -17,12 +17,12 @@ const desactivado = false;
 
 /*  ARRAYS, ARREGLOS, VECTORES, LISTAS */
 
-const numero = [1,2,3,4,5,6,7];
+const numero = [1, 2, 3, 4, 5, 6, 7];
 
 
 numero.push(8);
 numero.push(9);
-numero.push(10); 
+numero.push(10);
 
 // console.log(numero);
 
@@ -39,9 +39,9 @@ numero.push(10);
 
 //  for (const item of numeros){
 
-    // console.log(item);
+// console.log(item);
 
- 
+
 
 // //  OTRA FORMA DE RECORRE EL ARREGLO MAS OPTIMIZADO
 
@@ -50,14 +50,14 @@ numero.push(10);
 // /* OBJETOS EN JAVASCRIPT */
 
 // const persona = {
-    
+
 //     nombre:"Josee",
 //     apellido:"Romero",
 //     edad:40,
-    // numeros.map((item)=>console.log(item)); devuelve un resultado
+// numeros.map((item)=>console.log(item)); devuelve un resultado
 // 
 // };
-// clclg  clconsole.log.edad(persona);numeros.forEach(item=>console.log(item)); no devuelve resultado
+// numeros.forEach(item=>console.log(item)); no devuelve resultado
 
 // let i = 0;
 
@@ -70,11 +70,125 @@ numero.push(10);
 
 /* OBJETOS EN JAVASCRIPT */
 
-const persona = {
+let persona = {
 
-    nombre:"Jose",
-    apellido:"Romero",
-    edad:40,
-    };
-    console.log(persona.nombre);
+    nombre: "Jose",
+    apellido: "Romero",
+    edad: 40,
+};
+// console.log(persona.nombre); 
 
+const masDatosDelaPersona = {
+
+    estatura: 1.69,
+    nacionalidad: "venezolana",
+}
+
+/* PROPAGACION */
+
+persona = {
+
+    ...persona,
+    ...masDatosDelaPersona,
+};
+
+
+
+persona.hermanos = 4 //agregar atributos a persona
+
+
+delete persona.estatura;
+//  console.log(persona);
+
+// const alumno1={
+
+//     id:1,
+//     nombre:"Juan",
+//     apellido:"Perez",
+//     edad:18,
+
+// };
+
+// const alumno2={
+
+//     id:2,
+//     nombre:"Diego",
+//     apellido:"Monsalve",
+//     edad:19,
+// }
+
+// const estudiantes=[alumno1,alumno2];
+
+// console.log(alumnos[0].ed ad);
+
+/* OBJETOS DENTRO DE UN ARREGLO */
+
+// const estudiantes =[
+
+//     {
+//         id:1,
+//         nombre:"Jose",
+//         apellido:"Clemente",
+//         edad:20,
+
+//     },
+
+//     {
+//         id:2,
+//         nombre:"Carlos",
+//         apellido:"Hernandez",
+//         edad:38,
+
+//     },
+
+
+// ];
+
+// // console.log(estudiantes[1].edad);
+// estudiantes.forEach((item)=>console.log(item));
+
+
+const data = [
+
+    {
+        id: 1,
+        cuentaAhorros: "123456",
+        usuario: "Jose",
+        monto: 30000000.00,
+        deuda: null,
+        ciudad: "Medellin",
+        tarjetDeCredito: false,
+        transferencias: [
+
+            {
+                id: 90,
+                monto: -20000,
+                de: "123",
+                para: "123456",
+                fecha: "2025-06-19",
+            },
+
+            {
+                id: 91,
+                monto: 20000,
+                de: "123",
+                para: "123456",
+            },
+        ]
+        
+    },
+
+    {    
+        id: 2,
+        cuentaAhorros: "123456",
+        usuario: "Jose",
+        monto: 30000000.00,
+        deuda: null,
+        ciudad: "Medellin",
+        tarjetDeCredito: false,
+    },
+
+
+];
+
+console.log(data[0].monto);
