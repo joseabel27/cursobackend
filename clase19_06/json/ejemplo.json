@@ -1,0 +1,14 @@
+
+
+{
+
+    "nombre":"Jose",
+    "apellido":"Romero",
+    "edad":40,
+    "hobbies":[
+
+        "Ajedrez",
+        "nadar",
+        "correr"
+    ]
+}
