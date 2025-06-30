@@ -123,25 +123,61 @@ const productos = [
 //  ** Buscar Productos: Buscar productos por nombre y mostrar su información.
 // *************************************************************
 
-const buscarProductoName=(id)=>{
-
-const indexProductoABuscar = productos.findIndex((item)=> item.id ===id);
 
 
-if (indexProductoABuscar === -1){
 
-    console.log("Prodcuto no encontrado");
-    return;
-}
- console.log(productos[indexProductoABuscar])
+// const buscarProductoName=(nombre)=>{
 
-}
+// const nameProductoABuscar = productos.find((productos)=>productos.nombre === nombre);
+
+// if(!nameProductoABuscar){
+// console.log("Producto no encontrado");
+// return;
+// }
+    
+//  console.log(nameProductoABuscar);
+
+// };
+//  buscarProductoName("Teclado");
 
 
+
+
+// ******************************************************
 //  **  Filtrar Productos: Implementar filtros por:
 //   Rango de precios (precio minimo, precio maximo).
 //   Categoría.
+// ******************************************************
 
+
+
+// const precioMinimoMaximo = (array, min , max)=>{
+// return array.filter (
+
+//   producto => producto.precio >= min && producto.precio <=max);
+
+// };
+
+// console.log(precioMinimoMaximo(productos, 40, 1500));
+
+
+
+
+
+// ***************************************************************
 //  ** Cálculo Total de Inventario: Calcular el valor total del inventario (precio * stock).
+// ***************************************************************
+
+
+const calculototalInventario = (array)=>{
+
+  return array.reduce((total,producto)=>{
+    return total + (producto.precio * producto.stock);
+  }, 0);
+};
+
+const totalInventario = calculototalInventario(productos);
+console.log("El valor total del inventario es :",totalInventario);
+
 
 //   ** Descuento en Productos: Crear una función que aplique un descuento a todos los productos de una categoría específica y mostrar el nuevo precio.
